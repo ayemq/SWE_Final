@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Login Card */
+.login-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 40px;
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+.login-card h1 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-card h2 {
+    color: #666;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Judge Card */
+.judge-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin: 20px auto;
+}
+
+.judge-card h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+}
+
+/* Form Styles */
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Scoring Table */
+.scoring-table {
+    margin: 30px 0;
+    overflow-x: auto;
+}
+
+.scoring-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.scoring-table th {
+    background: #f0f0f0;
+    color: #333;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+.scoring-table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.score-dropdown {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.total-row {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+
+.total-row td {
+    font-size: 18px;
+}
+
+#totalScore {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #333;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #555;
+}
+
+.btn-secondary {
+    background: #ccc;
+    color: #333;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background: #aaa;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Result Card */
+.result-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.success-message h2 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.error-message h2 {
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+.result-actions {
+    margin-top: 30px;
+}
+
+.error-message {
+    color: #dc3545;
+    background: #f8d7da;
+    padding: 12px;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 20px;
+}
+
+/* Admin Panel */
+.admin-panel {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin: 20px auto;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.admin-header h1 {
+    color: #333;
+    margin: 0;
+}
+
+.admin-panel h2 {
+    color: #333;
+    margin: 30px 0 20px 0;
+    font-size: 24px;
+}
+
+.results-table-container {
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.results-table th {
+    background: #f0f0f0;
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+.results-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.no-data {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 20px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .judge-card,
+    .admin-panel {
+        padding: 20px;
+    }
+    
+    .scoring-table {
+        font-size: 14px;
+    }
+    
+    .scoring-table th,
+    .scoring-table td {
+        padding: 10px;
+    }
+    
+    .scoring-table input[type="radio"] {
+        margin: 0 5px;
+    }
+    
+    .admin-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .admin-header .btn-secondary {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
